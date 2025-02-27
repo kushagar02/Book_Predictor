@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bookstore Dashboard</title>
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   </head>
+   <body class="main-layout">
+      <header>
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 logo_section">
+                     <a href="/"><img src="{% static 'images/logo.png' %}" alt="Logo"></a>
+                  </div>
+                  <div class="col-md-9 menu-area">
+                     <nav class="main-menu">
+                        <ul class="menu-area-main">
+                           <li class="active"> <a href="/">Home</a> </li>
+                           <li> <a href="/about">About us</a> </li>
+                           <li><a href="/books">Our Books</a></li>
+                           <li><a href="/cart">Cart</a></li>
+                           <li><a href="/logout">Logout</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <br>  <br>  <br>
+      <div class="container mt-5">
+         <h2 class="text-center">Available Books</h2>
+         <div class="row">
+            <div class="col-md-4" *ngFor="let book of books">
+               <div class="card">
+                  <img class="card-img-top" src="{% static 'images/book-1.jpg' %}" alt="Book Image">
+                  <div class="card-body">
+                     <h5 class="card-title">Book Title</h5>
+                     <p class="card-text">Short description of the book.</p>
+                     <p class="card-text"><strong>Price: $20</strong></p>
+                     <a href="/buy/book-1" class="btn btn-primary">Buy Now</a>
+                     <a href="/add-to-cart/book-1" class="btn btn-warning">Add to Cart</a>
+                  </div>
+               </div>
+               
+            </div>
+            <div class="col-md-4" *ngFor="let book of books">
+                <div class="card">
+                   <img class="card-img-top" src="{% static 'images/book-1.jpg' %}" alt="Book Image">
+                   <div class="card-body">
+                      <h5 class="card-title">Book Title</h5>
+                      <p class="card-text">Short description of the book.</p>
+                      <p class="card-text"><strong>Price: $20</strong></p>
+                      <a href="/buy/book-1" class="btn btn-primary">Buy Now</a>
+                      <a href="/add-to-cart/book-1" class="btn btn-warning">Add to Cart</a>
+                   </div>
+                </div>
+                
+             </div>
+             <div class="col-md-4" *ngFor="let book of books">
+                <div class="card">
+                   <img class="card-img-top" src="{% static 'images/book-1.jpg' %}" alt="Book Image">
+                   <div class="card-body">
+                      <h5 class="card-title">Book Title</h5>
+                      <p class="card-text">Short description of the book.</p>
+                      <p class="card-text"><strong>Price: $20</strong></p>
+                      <a href="/buy/book-1" class="btn btn-primary">Buy Now</a>
+                      <a href="/add-to-cart/book-1" class="btn btn-warning">Add to Cart</a>
+                   </div>
+                </div>
+                
+             </div>
+         </div>
+      </div>
+      <br>  <br>  <br>
+<!-- footer -->
+<footer>
+    <div class="footer">
+       <div class="container">
+          <div class="row pdn-top-30">
+             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="Follow">
+                   <h3>Follow Us</h3>
+                </div>
+                <ul class="location_icon">
+                   <li> <a href="#"><img src="{% static 'icon/facebook.png' %}"></a></li>
+                   <li> <a href="#"><img src="{% static 'icon/Twitter.png' %}"></a></li>
+                   <li> <a href="#"><img src="{% static 'icon/linkedin.png' %}"></a></li>
+                   <li> <a href="#"><img src="{% static 'icon/instagram.png' %}"></a></li>
+                </ul>
+             </div>
+             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <div class="Follow">
+                   <h3>Newsletter</h3>
+                </div>
+                <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+                <button class="Subscribe">Subscribe</button>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="copyright">
+       <div class="container">
+          <p>Copyright 2025 All Right Reserved By <a href="">bookstore@gmail.com</a></p>
+       </div>
+    </div>
+ </footer>
+ <!-- end footer -->
+ <!-- Javascript files-->
+ <script src="{% static 'js/jquery.min.js' %}"></script>
+ <script src="{% static 'js/popper.min.js' %}"></script>
+ <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+ <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+ <script src="{% static 'js/plugin.js' %}"></script>
+ <!-- sidebar -->
+ <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+ <script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>

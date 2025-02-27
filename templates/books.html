@@ -1,0 +1,177 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>books</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout Books-bg">
+            <!-- loader  -->
+            <div class="loader_bg">
+               <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
+            </div>
+            <!-- end loader -->
+           <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo"> <a href="/"><img src="{% static 'images/logo.png' %}" alt="#"></a> </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="menu-area">
+                        <div class="limit-box">
+                           <nav class="main-menu">
+                              <ul class="menu-area-main">
+                                 <li class="active"> <a href="/">Home</a> </li>
+                                 <li> <a href="/about">About us</a> </li>
+                                 <li><a href="/books">Our Books</a></li>
+                                 <li><a href="/library">library</a></li>
+                                 <li><a href="/contact">Contact us</a></li>
+                                 <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
+                                 <li class="mean-last"> <a href="/login"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a> </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- end header inner -->
+      </header>
+                  <!-- end header -->
+      <div class="about-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="abouttitle">
+                     <h2>Our Books</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Books -->
+      <div class="Books">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2>Our <strong class="black">Recommended Books</strong></h2>
+                     <span>Discover the best books for **JEE, NEET, and CET** preparation. Our collection includes top-rated guides, previous year question papers, and expert-recommended study materials to help you succeed.</span> 
+                  </div>
+               </div>
+            </div>
+            <div class="row box">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <div class="book-box">
+                     <figure><img src="{% static 'images/book-1.jpg' %}" alt="Best JEE Preparation Books"/></figure>
+                     <p>Top books for **JEE** aspirants, including Physics, Chemistry, and Mathematics.</p>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="book-box">
+                     <figure><img src="{% static 'images/book-2.jpg' %}" alt="Best NEET Preparation Books"/></figure>
+                     <p>Expert-recommended **NEET** books covering Biology, Physics, and Chemistry.</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <div class="book-box">
+                     <figure><img src="{% static 'images/book-1.jpg' %}" alt="Best CET Preparation Books"/></figure>
+                     <p>Essential books for **CET** aspirants to ace Engineering and Medical entrance exams.</p>
+                  </div>
+               </div>
+               <div class="col-md-6 offset-md-3">
+                  <p>Find the right books to boost your **JEE, NEET, and CET** preparation and score high in your exams.</p>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="read-more">
+                        <a href="#">Explore More Books</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end Books -->
+      <!-- footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row pdn-top-30">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                     <div class="Follow">
+                        <h3>Follow Us</h3>
+                     </div>
+                     <ul class="location_icon">
+                        <li> <a href="#"><img src="{% static 'icon/facebook.png' %}"></a></li>
+                        <li> <a href="#"><img src="{% static 'icon/Twitter.png' %}"></a></li>
+                        <li> <a href="#"><img src="{% static 'icon/linkedin.png' %}"></a></li>
+                        <li> <a href="#"><img src="{% static 'icon/instagram.png' %}"></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                     <div class="Follow">
+                        <h3>Newsletter</h3>
+                     </div>
+                     <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+                     <button class="Subscribe">Subscribe</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <p>Copyright 2019 All Right Reserved By <a href="#">bookstore@gmail.com</a></p>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>
+COPY TO CLIPBOARD    SELECT ALL
